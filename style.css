@@ -1,0 +1,96 @@
+body {
+    height: 100vh;
+    margin: 0;
+}
+
+
+.websiteLogoText {
+    font-family: patua one, sans-serif;
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-left: -50px;
+}
+
+.websiteLogoText:hover {
+    cursor: pointer;
+}
+
+.firstHalf {
+    color: red;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-family: 'Mada',sans-serif;
+    
+
+}
+
+
+.websiteHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: lightblue;
+    border-bottom: 3px solid black;
+    padding: 0px 50px 0px 50px;
+}
+
+.signUp {
+    font-family: mada;
+    font-size: 24px;
+    padding: 10px;
+    margin-right: 20px;
+    color: black;
+}
+
+.signUp:hover {
+    cursor: pointer;
+}
+
+.signUpLink:hover {
+    color: red;
+    transform: scale(125%);
+}
+
+.headerDivider {
+    font-size: 25px;
+    width: 50px;
+}
+
+.hoverAnimation {
+  display: inline-block;
+  position: relative;
+  color: red;
+}
+
+.hoverAnimation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hoverAnimation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
