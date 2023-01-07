@@ -4,6 +4,7 @@ body {
 }
 
 
+
 .websiteLogoText {
     font-family: patua one, sans-serif;
     text-transform: uppercase;
@@ -93,4 +94,51 @@ a {
 .hoverAnimation:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+.container img {
+    height: 450px;
+    /* border: 4px solid black; */
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 3px;  black;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 150px;
+    border: 1px solid black;
+    background: darkgray;
+}
+
+.mainText {
+    font-family: patua one, sans-serif;
+    text-transform: uppercase;
+    font-size: 25px;
+
+}
+
+.mainPara {
+    font-size: 64px;
+    font-family: 'patua one', sans-serif;
+}
+
+.leftSideMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    margin-left: 150px;  
+}
+
+.mainPara {
+    margin-top: 0px;
+}
+
+.credit {
+    font-size: 36px;
+    color: red;
+    margin-top: -50px;
+    font-family: 'mada';
 }
